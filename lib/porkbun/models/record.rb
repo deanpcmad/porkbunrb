@@ -44,6 +44,11 @@ module Porkbun
         response.body["status"] == "SUCCESS"
       end
 
+      def delete(domain:, id:)
+        response = Client.post_request("dns/delete/#{domain}/#{id}", body: {})
+        response.body["status"] == "SUCCESS"
+      end
+
       def delete_by_subdomain(domain:, type:, subdomain:)
         response = Client.post_request("dns/deleteByNameType/#{domain}/#{type}/#{subdomain}", body: {})
         response.body["status"] == "SUCCESS"

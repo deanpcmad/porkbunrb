@@ -53,6 +53,14 @@ class RecordTest < Minitest::Test
     assert record
   end
 
+  def test_record_delete
+    record = Porkbun::Record.delete(
+      domain: "deanpcmad.dev",
+      id: "253421437"
+    )
+    assert record
+  end
+
   def test_record_delete_by_subdomain
     record = Porkbun::Record.delete_by_subdomain(
       domain: "deanpcmad.dev",
