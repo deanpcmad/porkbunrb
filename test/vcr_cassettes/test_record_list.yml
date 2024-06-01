@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://porkbun.com/api/json/v3/dns/retrieve/deanpcmad.dev
+    body:
+      encoding: UTF-8
+      string: '{"apikey":"<API_KEY>","secretapikey":"<API_SECRET>"}'
+    headers:
+      User-Agent:
+      - porkbun/v0.1.0 (github.com/deanpcmad/porkbun)
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 01 Jun 2024 18:17:02 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      set-cookie:
+      - AWSALB=dV5Ghwe28Oy3T/VydMsWozdW2yhXMm4vPKIIHa4Yc8bfm0RP/TUp/Pjwpch+j6zIkjHNpXSLO/gPywE6SUoGLkYtQIINTlizrLpHAsH0IoK39RNu9LvhyVCKwzWQ;
+        Expires=Sat, 08 Jun 2024 18:17:02 GMT; Path=/, AWSALBCORS=dV5Ghwe28Oy3T/VydMsWozdW2yhXMm4vPKIIHa4Yc8bfm0RP/TUp/Pjwpch+j6zIkjHNpXSLO/gPywE6SUoGLkYtQIINTlizrLpHAsH0IoK39RNu9LvhyVCKwzWQ;
+        Expires=Sat, 08 Jun 2024 18:17:02 GMT; Path=/; SameSite=None; Secure, BUNSESSION2=tLhC5Ay8-Hz%2CTwvSNlGgYwNDmWbW5Nlr5gBcopxtiLUErHJh;
+        path=/; secure; HttpOnly; SameSite=Lax
+      server:
+      - openresty
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=63072000; includeSubDomains; preload
+      x-frame-options:
+      - sameorigin
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      referrer-policy:
+      - origin
+      content-language:
+      - en-US, en
+    body:
+      encoding: UTF-8
+      string: '{"status":"SUCCESS","cloudflare":"enabled","records":[{"id":"253421437","name":"*.deanpcmad.dev","type":"CNAME","content":"pixie.porkbun.com","ttl":"600","prio":null,"notes":null},{"id":"253421425","name":"deanpcmad.dev","type":"NS","content":"maceio.porkbun.com","ttl":"86400","prio":null,"notes":null},{"id":"253421426","name":"deanpcmad.dev","type":"NS","content":"salvador.porkbun.com","ttl":"86400","prio":null,"notes":null},{"id":"253421427","name":"deanpcmad.dev","type":"NS","content":"fortaleza.porkbun.com","ttl":"86400","prio":null,"notes":null},{"id":"253421428","name":"deanpcmad.dev","type":"NS","content":"curitiba.porkbun.com","ttl":"86400","prio":null,"notes":null}]}'
+  recorded_at: Sat, 01 Jun 2024 18:17:02 GMT
+recorded_with: VCR 6.2.0

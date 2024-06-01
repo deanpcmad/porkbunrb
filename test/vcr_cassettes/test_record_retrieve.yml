@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://porkbun.com/api/json/v3/dns/retrieve/deanpcmad.dev/253421437
+    body:
+      encoding: UTF-8
+      string: '{"apikey":"<API_KEY>","secretapikey":"<API_SECRET>"}'
+    headers:
+      User-Agent:
+      - porkbun/v0.1.0 (github.com/deanpcmad/porkbun)
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 01 Jun 2024 18:17:03 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      set-cookie:
+      - AWSALB=sINiHkro9lPVmjdCJQK7bwSQdFBoyPvTfTiNXZmgZGyP7U6C9nM9MkVNl/1L3Tg/f/pBqxuqHdtUfqflQlkF0a7qPEuSi97Om7c4x9QRwefyFv2yQth1Q8bnm/OR;
+        Expires=Sat, 08 Jun 2024 18:17:03 GMT; Path=/, AWSALBCORS=sINiHkro9lPVmjdCJQK7bwSQdFBoyPvTfTiNXZmgZGyP7U6C9nM9MkVNl/1L3Tg/f/pBqxuqHdtUfqflQlkF0a7qPEuSi97Om7c4x9QRwefyFv2yQth1Q8bnm/OR;
+        Expires=Sat, 08 Jun 2024 18:17:03 GMT; Path=/; SameSite=None; Secure, BUNSESSION2=1gJcZJFq7vHEQ52iMzQYmYld8U4twOPblt2wNQ9v4BogfsAR;
+        path=/; secure; HttpOnly; SameSite=Lax
+      server:
+      - openresty
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=63072000; includeSubDomains; preload
+      x-frame-options:
+      - sameorigin
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      referrer-policy:
+      - origin
+      content-language:
+      - en-US, en
+    body:
+      encoding: UTF-8
+      string: '{"status":"SUCCESS","cloudflare":"enabled","records":[{"id":"253421437","name":"*.deanpcmad.dev","type":"CNAME","content":"pixie.porkbun.com","ttl":"600","prio":null,"notes":null}]}'
+  recorded_at: Sat, 01 Jun 2024 18:17:03 GMT
+recorded_with: VCR 6.2.0
