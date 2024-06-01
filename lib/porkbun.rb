@@ -25,5 +25,6 @@ module Porkbun
   autoload :Domain, "porkbun/models/domain"
   autoload :Record, "porkbun/models/record"
   autoload :NameServer, "porkbun/models/name_server"
+  autoload :Forward, "porkbun/models/forward"
 
 end
