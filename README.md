@@ -1,6 +1,6 @@
 # PorkbunRB
 
-Porkbun is a Ruby library for the Hetzner DNS API.
+PorkbunRB is a Ruby library for the Porkbun API.
 
 ## Installation
 
